@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Camadas do Modelo OSI</title>
+    <link rel="icon" href="1.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css"> 
+    <script defer src="scripts.js"></script> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Entenda as 7 Camadas do Modelo OSI</h1>
+            <p>Uma ferramenta interativa para aprender sobre as camadas e seus protocolos</p>
+        </header>
+
+        <main>
+            <section class="layer-container">
+                <div class="layer" id="physical-layer">
+                    <h2>Camada Física</h2>
+                    <p>Função principal: Transmissão de bits através de meios físicos.</p>
+                    <button class="info-btn">Detalhes</button>
+                    <div class="layer-info">
+                        <p><strong>Protocolos:</strong> Ethernet, DSL, Wi-Fi</p>
+                        <p><strong>Exemplo prático:</strong> Transmissão de dados entre dispositivos através de cabos ou sinal sem fio.</p>
+                        <p><strong>Problema comum:</strong> Colisões de sinais, interferência no sinal.</p>
+                        <p><strong>Solução:</strong> Utilização de técnicas de detecção e correção de erros, melhoria da qualidade do sinal.</p>
+                    </div>
+                </div>
+
+                <div class="layer" id="data-link-layer">
+                    <h2>Camada de Enlace</h2>
+                    <p>Função principal: Controlo de acesso ao meio e detecção/correção de erros.</p>
+                    <button class="info-btn">Detalhes</button>
+                    <div class="layer-info">
+                        <p><strong>Protocolos:</strong> Ethernet, PPP, ARP</p>
+                        <p><strong>Exemplo prático:</strong> Estabelecimento de conexão entre dispositivos em uma rede local.</p>
+                        <p><strong>Problema comum:</strong> Erros de transmissão, falhas de sincronização.</p>
+                        <p><strong>Solução:</strong> Revisão de protocolos de verificação e retransmissão de pacotes.</p>
+                    </div>
+                </div>
+
+                <div class="layer" id="network-layer">
+                    <h2>Camada de Rede</h2>
+                    <p>Função principal: Roteamento de pacotes entre diferentes redes.</p>
+                    <button class="info-btn">Detalhes</button>
+                    <div class="layer-info">
+                        <p><strong>Protocolos:</strong> IP, ICMP, IPv6</p>
+                        <p><strong>Exemplo prático:</strong> Roteamento de pacotes de dados através de múltiplos roteadores em uma rede global.</p>
+                        <p><strong>Problema comum:</strong> Erros de roteamento, pacotes perdidos.</p>
+                        <p><strong>Solução:</strong> Uso de algoritmos de roteamento eficientes, como OSPF ou BGP.</p>
+                    </div>
+                </div>
+
+                <div class="layer" id="transport-layer">
+                    <h2>Camada de Transporte</h2>
+                    <p>Função principal: Garantir a entrega confiável de pacotes de dados.</p>
+                    <button class="info-btn">Detalhes</button>
+                    <div class="layer-info">
+                        <p><strong>Protocolos:</strong> TCP, UDP</p>
+                        <p><strong>Exemplo prático:</strong> Estabelecimento de uma conexão confiável para transmissão de arquivos (TCP).</p>
+                        <p><strong>Problema comum:</strong> Perda de pacotes, retransmissões desnecessárias.</p>
+                        <p><strong>Solução:</strong> Implementação de técnicas de controle de congestionamento e retransmissão.</p>
+                    </div>
+                </div>
+
+                <div class="layer" id="session-layer">
+                    <h2>Camada de Sessão</h2>
+                    <p>Função principal: Estabelecer, gerenciar e encerrar sessões de comunicação.</p>
+                    <button class="info-btn">Detalhes</button>
+                    <div class="layer-info">
+                        <p><strong>Protocolos:</strong> NetBIOS, RPC</p>
+                        <p><strong>Exemplo prático:</strong> Estabelecimento de uma comunicação entre dois processos em diferentes sistemas.</p>
+                        <p><strong>Problema comum:</strong> Perda de sincronização entre aplicações.</p>
+                        <p><strong>Solução:</strong> Uso de protocolos para controle e sincronização de sessões.</p>
+                    </div>
+                </div>
+
+                <div class="layer" id="presentation-layer">
+                    <h2>Camada de Apresentação</h2>
+                    <p>Função principal: Tradução, compressão e criptografia de dados.</p>
+                    <button class="info-btn">Detalhes</button>
+                    <div class="layer-info">
+                        <p><strong>Protocolos:</strong> SSL/TLS, JPEG, GIF</p>
+                        <p><strong>Exemplo prático:</strong> Criptografia de uma comunicação HTTPS.</p>
+                        <p><strong>Problema comum:</strong> Falhas na conversão de formatos de dados.</p>
+                        <p><strong>Solução:</strong> Utilização de formatos padronizados e técnicas de conversão eficientes.</p>
+                    </div>
+                </div>
+
+                <div class="layer" id="application-layer">
+                    <h2>Camada de Aplicação</h2>
+                    <p>Função principal: Interface para as aplicações de rede.</p>
+                    <button class="info-btn">Detalhes</button>
+                    <div class="layer-info">
+                        <p><strong>Protocolos:</strong> HTTP, FTP, DNS</p>
+                        <p><strong>Exemplo prático:</strong> Navegação em sites na web (HTTP).</p>
+                        <p><strong>Problema comum:</strong> Conexões lentas, falhas no protocolo.</p>
+                        <p><strong>Solução:</strong> Melhoria no design da aplicação e otimização de protocolos de rede.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Criado por Matz-Turing</p>
+        </footer>
+    </div>
+</body>
+</html>
